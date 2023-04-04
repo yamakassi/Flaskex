@@ -1,0 +1,8 @@
+Исправил в файле form.py строчки 7-8 было validators.required() стало> validators.input_required()  (в соответствии с документацией https://wtforms.readthedocs.io/en/3.0.x/forms/#defining-forms)
+
+В файле requirements.txt строго указал версии, для того если в будующем вдруг нарушится обратная совместимость одной из зависимостей можно было запустить приложение. (текущие зависимости смотрел с помощью команды pip freeze -r requirements.txt внутри контейнера)
+
+запуск приложения:
+  1.скачать
+  2.перейти в корень проекта (cd Flaskex)
+  3. docker compose up -d
